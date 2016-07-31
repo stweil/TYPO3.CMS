@@ -713,7 +713,7 @@ class DataHandler
         $this->username = $this->BE_USER->user['username'];
         $this->admin = $this->BE_USER->user['admin'];
         if ($this->BE_USER->uc['recursiveDelete']) {
-            $this->deleteTree = 1;
+            $this->deleteTree = true;
         }
         if ($GLOBALS['TYPO3_CONF_VARS']['BE']['explicitConfirmationOfTranslation'] && $this->updateModeL10NdiffData === true) {
             $this->updateModeL10NdiffData = false;
